@@ -1,0 +1,137 @@
+@font-face {
+	font-family: marquee;
+	src: url(marquee.ttf);
+}
+@font-face {
+	font-family: pressstart;
+	src: url(pressstart.ttf);
+}
+a {
+	text-shadow: 1px 1px #1DFF00;
+	color: #DCE32B;
+}
+body {
+	font-family: Arial sans-sherif;
+	margin: 0;
+	background-image: url('img/background.jpg');
+	background-position: center center;
+	background-repeat: repeat;
+	color: #FFF;
+	padding: 0 20%;
+}
+main {
+	background-color: #6ACFD9;
+	border: solid 5px #000000;
+	font-family: pressstart;
+	font-size: .6em;
+	margin-bottom: 5em;
+}
+h1 {
+	font-family: marquee;
+	text-shadow: 3px 3px #1DFF00;
+	color: #DCE32B;
+	font-size: 5em;
+	font-weight: normal;
+	margin: .1em 0;
+	text-align: center;
+	animation: color-change 1s infinite;
+}
+.product {
+	animation: rainbow 1s infinite;
+}
+header {
+	background-color: #30479D;
+	border: solid 10px #000;
+}
+.wrapper {
+	display: grid;
+	grid-template-columns: 20% 80%;
+	padding: 1em;
+}
+.sidebar{
+	height: 100vh;
+}
+.sideitem {
+	color: #DCE32B;
+	background-color: #30479D;
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
+	margin-bottom: 1em;
+}
+.products {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 285px;
+}
+.product {
+	margin: 0 0em 1em 1em;
+	padding: 1em;
+	background-color: #D94498;
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
+	height: 250px;
+	transition: ease-in-out .2s all;
+}
+.product h2{
+	text-decoration: underline;
+	text-align: center;
+}
+.product:hover{
+	cursor: pointer;
+	transform: scale(.95);
+}
+.product .brand{
+	text-align: center;
+}
+.product .price{
+	text-align: center;
+	font-size: 18px;
+}
+.sideitem {
+	padding: 1em;
+	font-weight: normal;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.sideitem a {
+	text-shadow: none;
+	margin-bottom: 1em;
+}
+.sideitem img {
+	height: 2em;
+	width: 2em;
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;
+	padding: .5em;
+}
+.product img {
+	display: block;
+	margin: 0 auto;
+	height: 160px;
+	width: 175px;
+	object-fit: cover;
+	border-radius: 11%;
+	border: 1px solid #000;
+}
+
+@media only screen and (max-width: 1400px) {
+	.products {
+		grid-template-columns: 1fr 1fr;
+	}
+	body {
+		padding: 0 15%;
+	}
+	.wrapper {
+		grid-template-columns: 30% 70%;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.products {
+		grid-template-columns: 1fr;
+	}
+	body {
+		padding: 0;
+	}
+	.wrapper {
+		grid-template-columns: 40% 60%;
+	}
+}

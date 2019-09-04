@@ -1,0 +1,71 @@
+.items, .prices {
+	background-color: #D94498;
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
+	padding: 2em;
+}
+.prices {
+	margin-top: 2em;
+}
+.article {
+	background-color: #30479D;
+	margin: 0 3em;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
+	padding: 2em;
+}
+.waggie {
+	margin: 0em 4em;
+}
+.waggie h2 {
+	margin: 0;
+	text-align: center;
+	font-size: 1.8em;
+	padding: 1em 0 .5em 0;
+}
+.waggie img {
+	width: 15em;
+	height: 15em;
+	border-radius: 20px;
+}
+.article p {
+	color: #DCE32B;
+}
+.name {
+	font-size: 1.6em;
+}
+.description {
+	font-size: 1.2em;
+}
+.price {
+	font-size: 1.4em;
+	position: absolute;
+}
+table {
+	width: 80%;
+	font-size: 1.2em;
+}
+button {
+	background-color: #30479D;
+	color: #DCE32B;
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
+	border-radius: 20px;
+	font-size: 1.5em;
+	padding: 1em 4em;
+	font-family: pressstart;
+	border-color: transparent;
+	display: block;
+	margin: 0 auto;
+	margin-top: 1em;
+}
+@media only screen and (max-width: 1200px) {
+	.article {
+	    display: block;
+	   	padding-bottom: 5em;
+	    margin: 0;
+	}
+	.article img {
+	    width: 100%;
+	    object-fit: cover;
+	}
+}
